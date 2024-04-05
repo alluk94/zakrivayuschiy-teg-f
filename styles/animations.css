@@ -12,3 +12,37 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+/* HEADER ARROW ANIMATION */
+
+@keyframes arrow {
+  from {
+    left: -15px;
+  }
+
+  to {
+    left: -10px;
+  }
+}
+
+/* LIKE BUTTON ANIMATION */
+
+@keyframes heart-icon {
+  from {
+    transform: scale(1.5);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes heart-sparks {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}

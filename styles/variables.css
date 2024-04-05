@@ -9,6 +9,8 @@
   --color-main: #000;
   --color-background: #fff;
   --color-stroke: #fff;
+  --color-red: #ff0000;
+  --color-button: #fff;
 
   /* GRADIENT COLORS */
 
@@ -17,7 +19,7 @@
   --color-gradient-second: #1a1a1a;
 
   /* WEIGHTS */
-  
+
   --weight-title: 700;
   --weight-paragraph: 400;
 }
