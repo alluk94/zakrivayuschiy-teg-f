@@ -431,13 +431,33 @@
       <!-- END CARD #8 -->
       <!-- SAVE BUTTON -->
       <div class="save__button-container">
-        <button class="save__button">
+        <button
+        class="save__button"
+        type="button"
+        onclick="window['dialog-id'].showModal()"
+        aria-controls="dialog-id">
           <svg class="save__button-svg">
             <use href="./svg/floppy.svg#floppy-svg"/>
           </svg>
           <span class="save__button-text">Сохранить на память</span>
         </button>
       </div>
+      <dialog class="insert__floppy-popup" id="dialog-id">
+        <div class="insert__floppy-container">
+          <svg class="insert__floppy-svg">
+            <use href="./svg/floppy.svg#floppy-svg"/>
+          </svg>
+          <span class="insert__floppy-text">
+            Вставьте дискету, чтобы продолжить
+          </span>
+        </div>
+          <button
+          class="insert__floppy-button"
+          type="button"
+          onclick="window['dialog-id'].close()">
+          <span class="insert__floppy-button-text">ок</span>
+          </button>
+      </dialog>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

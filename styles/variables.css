@@ -1,19 +1,23 @@
 :root {
   /* FONTS */
+
   --font-main: 'Inter', sans-serif;
   --font-accent: 'Press Start 2P', system-ui;
 
   /* BASIC COLORS */
+
   --color-main: #000;
   --color-background: #fff;
   --color-stroke: #fff;
 
   /* GRADIENT COLORS */
+
   --color-gradient-main: #d3d3d3;
   --color-gradient-first: #e7e7e7;
   --color-gradient-second: #1a1a1a;
 
   /* WEIGHTS */
+  
   --weight-title: 700;
   --weight-paragraph: 400;
 }

@@ -1,70 +1,85 @@
 /* DARK THEME STYLES */
 :root.theme-dark {
   /* BASIC COLORS */
+
   --color-main: #00cc14;
   --color-background: #000;
   --color-stroke: #000;
 
   /* GRADIENT COLORS */
+
   --color-gradient-main: #000;
   --color-gradient-first: #007f0c;
   --color-gradient-second: #004306;
 
   /* WEIGHTS */
+
   --weight-title: 785;
   --weight-paragraph: 465;
 }
 
 /* DARK THEME STYLES (USER-PREFERS) */
+
 @media (prefers-color-scheme: dark) {
   :root {
     /* BASIC COLORS */
+
     --color-main: #00cc14;
     --color-background: #000;
     --color-stroke: #000;
 
     /* GRADIENT COLORS */
+
     --color-gradient-main: #000;
     --color-gradient-first: #007f0c;
     --color-gradient-second: #004306;
 
     /* WEIGHTS */
+
     --weight-title: 785;
     --weight-paragraph: 465;
   }
 }
 
 /* LIGHT THEME STYLES */
+
 :root.theme-light {
     /* BASIC COLORS */
+
     --color-main: #000;
     --color-background: #fff;
     --color-stroke: #fff;
 
     /* GRADIENT COLORS */
+
     --color-gradient-main: #d3d3d3;
     --color-gradient-first: #e7e7e7;
     --color-gradient-second: #1a1a1a;
 
     /* WEIGHTS */
+
     --weight-title: 700;
     --weight-paragraph: 400;
   }
 
   /* DARK THEME STYLES (USER-PREFERS) */
+
 @media (prefers-color-scheme: light) {
   :root {
     /* BASIC COLORS */
+
     --color-main: #000;
     --color-background: #fff;
     --color-stroke: #fff;
 
     /* GRADIENT COLORS */
+
     --color-gradient-main: #d3d3d3;
     --color-gradient-first: #e7e7e7;
     --color-gradient-second: #1a1a1a;
 
     /* WEIGHTS */
+
     --weight-title: 700;
     --weight-paragraph: 400;
   }
