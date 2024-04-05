@@ -1,1 +1,19 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  /* fonts */
+
+  --font-main: 'Inter', sans-serif;
+  --font-accent: 'Press Start 2P', system-ui;
+
+  /* basic colors */
+  --color-main: #000;
+  --color-background: #fff;
+  --color-stroke: #fff;
+
+  /* background gradient colors */
+  --color-gradient-main: #d3d3d3;
+  --color-gradient-first: #e7e7e7;
+  --color-gradient-second: #1a1a1a;
+
+  /* sizes */
+
+}
