@@ -22,6 +22,7 @@
 
 @supports ((text-stroke: 1px var(--color-main)) or (-webkit-text-stroke: 1px var(--color-main))) {
   .card__image-label {
+    text-stroke: 1px var(--color-main);
     -webkit-text-stroke: 1px var(--color-main);
     text-shadow: none;
   }
@@ -34,12 +35,13 @@
   min-block-size: 100dvb;
   font-family: 'Inter', sans-serif;
   font-variation-settings: "wght" var(--weight-paragraph);
+  background-color: var(--color-gradient-main);
   background-image: repeating-linear-gradient(to bottom, var(--color-gradient-main) 0px 2px, transparent 2px 4px),
   repeating-linear-gradient(to right, var(--color-gradient-main) 0px 2px, transparent 2px 4px),
   linear-gradient(180deg, var(--color-gradient-first) 0%, var(--color-gradient-second) 100%);
   background-size: cover;
   background-attachment: fixed;
-   color: var(--color-main);
+  color: var(--color-main);
 }
 
 /* PAGE CONTENT CONTAINER */
@@ -59,7 +61,7 @@
     margin-block-start: 100px;
     margin-block-end: 100px;
     padding: clamp(7.5rem, 7.148rem + 1.502vw, 8.5rem) 0 25px;
-    gap: 22px;
+    gap: 20px;
     font-family: var(--font-accent);
     color: var(--color-text);
     background-color: var(--color-background);
@@ -80,46 +82,29 @@
   .theme-menu__list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    padding-left: 20px;
+    padding-top: 4px;
+    gap: 9px;
   }
 
-  .theme-menu__button {
-    text-transform: uppercase;
-    font-size: 14px;
-    background-color: transparent;
-    border: none;
-    transition: 0.3s;
-    position: relative;
-    outline: none;
-  }
 
-  .theme-menu__button::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-main);
-    transform: scale(0);
-    transform-origin: left;
-    transition: 0.3s;
-  }
 
   .theme-menu__button:focus-visible::after {
     animation-timing-function: ease;
-    transition: 0.3s;
+    /* transition: 0.3s; */
     transform: scale(1);
   }
 
   .theme-menu__button:focus {
     opacity: 60%;
-    transition: 0.3s;
-    animation-timing-function: ease;
+    /* transition: 0.3s; */
+    /* animation-timing-function: ease; */
   }
 
   .theme-menu__button:hover {
     cursor: pointer;
     opacity: 60%;
-    transition: 0.3s;
+    /* transition: 0.3s; */
     animation-timing-function: ease;
   }
 
@@ -133,6 +118,8 @@
     opacity: 60%;
     animation: arrow 0.5s ease-in-out infinite alternate-reverse;
     position: absolute;
+    top: 0;
+    left: 0;
   }
 
 
@@ -155,7 +142,7 @@
 
   .card__title {
     font-size: 18px;
-    padding: 5px 12px 5px 12px;
+    padding: 0px 12px 5px 12px;
     font-weight: var(--weight-title);
     font-variation-settings: "wght" var(--weight-title);
   }
@@ -170,6 +157,8 @@
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .card__image-label {
@@ -201,41 +190,21 @@
   .card__text-container {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
   }
 
   .card__text {
     font-size: 18px;
-    line-height: 116.667%;
+    line-height: 21px;
     font-weight: var(--weight-paragraph);
     font-variation-settings: "wght" var(--weight-paragraph);
   }
 
   .card__buttons-container {
     display: flex;
-    gap: 12px;
+    gap: 0px;
     align-items: center;
     justify-content: flex-end;
-  }
-
-  /* HEART BUTTON EFFECTS */
-
-  .sparks {
-    opacity: 0;
-  }
-
-  .core {
-    opacity: 0;
-    transition: 0.3s;
-  }
-
-  .main-body {
-    opacity: 0;
-    transition: 0.3s;
-  }
-
-  .contour {
-    transition: 0.1s;
   }
 
   .card__icon-button {
@@ -249,7 +218,8 @@
   }
 
   .card__icon-button:focus-visible {
-    border: 2px solid var(--color-main);
+    outline: 2px solid var(--color-main);
+    outline-offset: -4px;
   }
 
   .card__like-button {
@@ -283,66 +253,6 @@
   .card__like-button:focus {
     outline: none;
   }
-
-  .card__like-button:focus-visible {
-    box-shadow: 2px 2px var(--color-main);
-    transition: 0.3s;
-  }
-
-  .card__icon-button:hover .main-body {
-    opacity: 100%;
-    transition: 0.3s;
-  }
-
-  .card__icon-button:hover .core {
-    opacity: 100%;
-    transition: 0.3s;
-    transition-delay: 0.05s;
-  }
-
-  .card__icon-button:active .main-body {
-    fill: var(--color-red);
-    transition: 0.3s;
-  }
-
-  .card__icon-button:active .core {
-    fill: var(--color-red);
-    transition: 0.3s;
-    transition-delay: 0.05s;
-  }
-
-  .like-icon.is-liked .main-body {
-    fill: var(--color-red);
-    transition: 0.3s;
-  }
-
-  .like-icon.is-liked .core {
-    fill: var(--color-red);
-    transition: 0.3s;
-    transition-delay: 0.05s;
-  }
-
-  .like-icon.is-liked .contour {
-    fill: var(--color-red);
-    transition: 0.3s;
-    transition-delay: 0.06s;
-  }
-
-  .like-icon__heart {
-    transform-origin: center;
-  }
-
-  .like-icon.is-liked .like-icon__heart {
-    animation: heart-icon 0.3s ease-in alternate-reverse;
-    animation-iteration-count: 2;
-    transition-delay: 0.4s;
-  }
-
-  .like-icon.is-liked .sparks {
-    animation: heart-sparks 0.3s ease-in;
-    animation-delay: 0.3s;
-  }
-
 
   /* SAVE BUTTON STYLES */
 
@@ -414,16 +324,13 @@
    height: 28px;
    mix-blend-mode: difference;
    color: var(--color-button);
-
-
   }
 
   /* POPUP STYLES */
 
   .insert__floppy-popup {
     width: 341px;
-    height: 195px;
-    padding: 30px;
+    padding: 30px 30px 60px 30px;
     gap: 30px;
     background-color: var(--color-background);
     border: 2px solid var(--color-main);
@@ -459,27 +366,9 @@
     top: 30px;
     background-color: transparent;
     border: 2px solid var(--color-main);
-    block-size: 40px;
-    inline-size: 257px;
-    cursor: pointer;
-  }
-
-  .insert__floppy-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: var(--color-main);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: 0.5s;
-  }
-
-  .insert__floppy-button:hover::before {
-    transform: scaleX(1);
-    transition: 0.5s ease-in-out;
+    padding: 10px 20px;
+    cursor: pointer;
   }
 
   .insert__floppy-button:focus {
@@ -496,6 +385,7 @@
     color: var(--color-button);
     text-transform: uppercase;
     mix-blend-mode: difference;
+    line-height: 90%;
   }
 
   /* IMG FILTERS */

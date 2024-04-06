@@ -5,6 +5,7 @@
   --color-main: #00cc14;
   --color-background: #000;
   --color-stroke: #000;
+  --color-red: #ff0000;
   --color-button: #00cc14;
 
   /* GRADIENT COLORS */
@@ -28,6 +29,7 @@
     --color-main: #00cc14;
     --color-background: #000;
     --color-stroke: #000;
+    --color-red: #ff0000;
     --color-button: #00cc14;
 
     /* GRADIENT COLORS */
@@ -51,6 +53,7 @@
     --color-main: #000;
     --color-background: #fff;
     --color-stroke: #fff;
+    --color-red: #ff0000;
     --color-button: #fff;
 
     /* GRADIENT COLORS */
@@ -74,6 +77,7 @@
     --color-main: #000;
     --color-background: #fff;
     --color-stroke: #fff;
+    --color-red: #ff0000;
     --color-button: #fff;
 
     /* GRADIENT COLORS */
