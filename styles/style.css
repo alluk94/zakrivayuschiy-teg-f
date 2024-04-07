@@ -242,18 +242,17 @@
 
   .card__icon-button:focus-visible {
     outline: 2px solid var(--color-main);
-    outline-offset: -4px;
+    outline-offset: -1px;
   }
 
   .card__like-button {
     position: relative;
     background-color: transparent;
     border: 2px solid var(--color-main);
-    block-size: 38px;
-    inline-size: 130px;
+    block-size: 40px;
+    inline-size: 128px;
     padding: 9px 17px;
     cursor: pointer;
-    letter-spacing: -2px;
   }
 
   .like__button::before {
@@ -286,7 +285,6 @@
     line-height: 90%;
     mix-blend-mode: difference;
     z-index: 1;
-    letter-spacing: -2px;
   }
 
   .save__button-container {
@@ -326,6 +324,10 @@
     border: 2px solid var(--color-main);
   }
 
+  .insert__floppy-popup .like__button {
+    text-transform: uppercase;
+  }
+
   .insert__floppy-popup::backdrop {
     background-color: #000;
     opacity: 0.75;
@@ -336,6 +338,8 @@
     grid-template-columns: 39px 1fr;
     align-items: center;
     gap: 20px;
+    padding-left: 10px;
+    padding-top: 1px;
   }
 
   .insert__button-svg {
@@ -354,10 +358,11 @@
   .insert__floppy-button {
     position: relative;
     top: 30px;
+    left: 11px;
     background-color: transparent;
     border: 2px solid var(--color-main);
-    width: 100%;
-    padding: 10px 20px;
+    width: 92%;
+    padding: 9px 20px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
   }
@@ -416,5 +421,20 @@
 
     .card__content-container {
       padding-top: 30px;
+    }
+
+    .insert__floppy-popup {
+      width: 357px;
+    }
+
+    .insert__floppy-container {
+      padding-left: 0px;
+      padding-top: 0px;
+    }
+
+    .insert__floppy-button {
+      left: 0;
+      width: 100%;
+
     }
   }
