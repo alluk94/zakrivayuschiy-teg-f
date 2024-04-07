@@ -286,13 +286,14 @@
     line-height: 90%;
     mix-blend-mode: difference;
     z-index: 1;
+    letter-spacing: -2px;
   }
 
   .save__button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block-end: 80px;
+    padding-block-end: 100px;
   }
 
   .save__button {
