@@ -222,7 +222,7 @@
 
   .card__buttons-container {
     display: flex;
-    gap: 0px;
+    gap: 6px;
     align-items: center;
     justify-content: flex-end;
   }
@@ -234,6 +234,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding-inline: 0px;
   }
 
   .card__icon-button:focus {
